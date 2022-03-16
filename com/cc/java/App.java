@@ -19,8 +19,8 @@ public class App {
         catsL.add(new Cat(catNames[i]));
         
     }
-   output("Test" + catsL);
-   output(catsL.get(0).petSounds());
+   /*output("Test" + catsL);
+   output(catsL.get(0).petSounds());*/
 
    //Dog dog1 = new Dog (dogNames[0]);
    //output(dog1.petSounds());
