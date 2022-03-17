@@ -13,5 +13,10 @@ public class Dog extends Pet{
         return name + " says: Bark!";
     }
 
+    @Override
+    public String toString() {
+        return "My name is " + this.name;
+    }
+
 
 }

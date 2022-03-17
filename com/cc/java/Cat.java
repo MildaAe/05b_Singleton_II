@@ -16,5 +16,10 @@ public class Cat extends Pet{
         return name + " says: Meow!";
     }
 
+    @Override
+    public String toString() {
+        return "My name is " + this.name;
+    }
+
 
 }
