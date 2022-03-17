@@ -5,10 +5,18 @@ import java.util.ArrayList;
 public class App {
   public static void main(String[] args) {
 		
-Controller c1 = Controller.getInstance(); 
+    Controller controller = Controller.getInstance();
+
+ArrayList <Cat> catsL = new ArrayList<>();
+ArrayList <Dog> dogsL = new ArrayList<>();
+
+
+output("Liste" + controller.getCatsL());
+
+/*Controller c1 = Controller.getInstance(); 
 output("c1: " + c1);
 Controller c2 = Controller.getInstance(); 
-output("c2: " + c2);
+output("c2: " + c2);*/
 
 		// Namenslisten --> Arrays
 		String [] catNames = {"Grizabella","Alonzo","RumTumTugger","Suzanne"};
@@ -17,13 +25,13 @@ output("c2: " + c2);
     //Cat cat1 = new Cat(catNames[0]); 
     //output(cat1.petSounds());
 
-    ArrayList<Cat> catsL = new ArrayList<>();
+    
   //  output("Test" + catsL);
 
-    for (int i=0; i<catNames.length; i++){
+    /*for (int i=0; i<catNames.length; i++){
         catsL.add(new Cat(catNames[i]));
         
-    }
+    }*/
     
    /*output("Test" + catsL);
    output(catsL.get(0).petSounds());*/
@@ -32,11 +40,11 @@ output("c2: " + c2);
    //output(dog1.petSounds());
 
 
-   ArrayList <Dog> dogsL = new ArrayList<>();
+   
 
-    for (int i = 0; i< dogNames.length; i++){
+    /*for (int i = 0; i< dogNames.length; i++){
         dogsL.add(new Dog(dogNames[i])); 
-        }
+        }*/
 //            output(dogsL.get(0).petSounds());
             
 }
