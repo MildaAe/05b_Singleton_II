@@ -7,9 +7,6 @@ public class App {
 		
     Controller controller = Controller.getInstance();
 
-ArrayList <Cat> catsL = new ArrayList<>();
-ArrayList <Dog> dogsL = new ArrayList<>();
-
 
 output("Liste" + controller.getCatsL());
 
@@ -28,25 +25,29 @@ output("c2: " + c2);*/
     
   //  output("Test" + catsL);
 
-    /*for (int i=0; i<catNames.length; i++){
-        catsL.add(new Cat(catNames[i]));
+    for (int i=0; i<catNames.length; i++){
+        controller.addNewCat(catNames[i]);
         
-    }*/
+    }
+    for (int i = 0; i< dogNames.length; i++){
+        controller.addNewDog(dogNames[i]); 
+        }
+
+    //output("Test: " + controller.getCatsL());
     
+    output(controller.getRandomDog().askACat());
+    output(controller.getRandomCat().askACat());
+
    /*output("Test" + catsL);
    output(catsL.get(0).petSounds());*/
 
    //Dog dog1 = new Dog (dogNames[0]);
    //output(dog1.petSounds());
 
-
-   
-
-    /*for (int i = 0; i< dogNames.length; i++){
-        dogsL.add(new Dog(dogNames[i])); 
-        }*/
+    
 //            output(dogsL.get(0).petSounds());
             
+
 }
 
     private static void output(String outputStr) {

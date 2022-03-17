@@ -14,13 +14,16 @@ public class Controller {
     this. random = new Random(); 
   }
 
-  
+  public Cat getRandomCat(){
+    return catsL.get(random.nextInt(catsL.size()));
+  }
+  public Dog getRandomDog(){
+    return dogsL.get(random.nextInt(dogsL.size()));
+  }
+
   public ArrayList<Cat> getCatsL() {
     return catsL;
   }
-
-
-
 
   public static Controller getInstance(){
     if(instance == null) {
@@ -34,4 +37,11 @@ public class Controller {
   private Random random;
 
 
+  public void addNewCat(String name){
+      catsL.add(new Cat(name));
+  }
+
+  public void addNewDog(String name){
+      dogsL.add(new Dog(name));
+  }
 }
